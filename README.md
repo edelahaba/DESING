@@ -1,3 +1,3 @@
 # DESING
 
-DISEÑO DE INTERFACES WEB
+Diseño de interfaces web
