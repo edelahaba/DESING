@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            window.onload = function(){
+                var ctx = document.getElementById("lienzo").getContext('2d');
+                var img = document.getElementById("imagen");
+                ctx.fillStyle = "#000000";
+                ctx.fillRect(0, 0, 800, 300);
+                ctx.drawImage(img,20,20,150,150);
+                ctx.drawImage(img, 350, 0, 50, 50);
+                ctx.drawImage(img, 0, 275, 50, 50);
+                ctx.fillRect(25, 250, 50, 50);
+            }
+        </script>
+    </head>
+    <body>
+        <img width="1" height="1" id="imagen" src="image.png">
+        <canvas id="lienzo" height="300" width="500"></canvas>
+    </body>
+</html>

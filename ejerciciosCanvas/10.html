@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            window.onload = function () {
+                var canvas = document.getElementById("lienzo");
+                var context = canvas.getContext("2d");
+
+                context.fillStyle = "#FF0000";
+                context.globalAlpha = 1;
+                context.fillRect(0, 0, 80, 80);
+
+                context.fillStyle = "#B4EEB4";
+                context.globalAlpha = 0.5;
+                context.fillRect(50, 50, 80, 80);
+            }
+        </script>
+    </head>
+    <body>
+        <canvas id="lienzo" width="300" height="150" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+    </body>
+</html>
+

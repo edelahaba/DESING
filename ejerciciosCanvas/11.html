@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            window.onload = function () {
+                var canvas = document.getElementById("lienzo");
+                var ctx = canvas.getContext("2d");
+                ctx.fillStyle = "#0011ff";
+                ctx.shadowBlur = 30;
+                ctx.shadowOffsetX = 8;
+                ctx.shadowOffsetY = 8;
+                ctx.shadowColor = "blue";
+                ctx.fillRect(0, 0, 80, 80);
+                ctx.fillStyle = "#0011ff";
+                ctx.fillRect(120, 0, 150, 80);
+            }
+        </script>
+    </head>
+    <body>
+        <canvas id="lienzo" width="300" height="150" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+    </body>
+</html>

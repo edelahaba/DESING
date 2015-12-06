@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            window.onload = function () {
+                var ctx = document.getElementById("lienzo").getContext('2d');
+                ctx.beginPath();
+                ctx.moveTo(31, 149);
+                ctx.strokeStyle="#FF0000";
+                ctx.bezierCurveTo(104, 108, 148, 204, 230, 142);
+                ctx.stroke();
+            };
+        </script>
+    </head>
+    <body>
+        <canvas id="lienzo" height="300" width="300"></canvas>
+    </body>
+</html>
